@@ -6,11 +6,6 @@ var app = express();
 var port = process.env.PORT || 8080;
 
 
-//Message API Route
-app.get('/message', function(req, res){
-	res.json({message: 'To be Implemented!'});
-});
-
 //HTML Static File Route
 app.use(express.static(__dirname + '/public'));
 

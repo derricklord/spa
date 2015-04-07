@@ -23,3 +23,9 @@ app.controller('MainController', function($scope, $animate){
 	}
 
 });
+
+app.directive('contactForm', function(){
+    return function(scope, element, attrs){
+           element.text('Name: ' + scope.names);
+    }
+});
